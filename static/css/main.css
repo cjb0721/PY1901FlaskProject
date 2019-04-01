@@ -1,0 +1,25 @@
+.row{
+	background-color: skyblue; 
+	border-radius: 5px;
+}
+.newset-top{
+	margin-bottom: 10px; 
+	padding-bottom: 10px;
+}
+.newset-body{
+	margin-top: 15px;
+}
+
+.carousel-inner > .item > img{
+	width: 100%;
+	height: 500px;
+}
+.newset{
+	margin-top: 25px;
+}
+textarea{
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>项目详情</title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="../static/css/detail.css"/> -->
+		
+		<script src="../static/js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			<div class="panel panel-default panel-info">
+				<!-- Default panel contents -->
+				<div class="panel-heading">
+					项目详情
+					<span style="margin-left: 80%;">当前用户:&nbsp;<b>{{user}}</b></span>
+				</div>
+				<div class="panel-body">
+					<p>
+						{% for d in detail %}
+							{% if d[0] == id %}								
+								<span>项目名称:&nbsp;{{d[1]}}</span><br>
+								<span>项目ID:&nbsp;{{d[0]}}</span>								
+							{% endif %}
+						{% endfor %}	
+					</p>
+				</div>
+			
+				<!-- List group -->
+				<ul class="list-group">
+					<li class="list-group-item">						
+						<p>
+							{% for d in detail %}
+								{% if d[0] == id %}
+									<p>
+										<span>项目内容</span>
+									</p>
+									<textarea class="form-control" rows="3" name="probody" readonly>{{d[2]}}</textarea>
+								{% endif %}
+							{% endfor %}	
+						</p>
+					</li>
+					<li class="list-group-item">
+						<button type="button" class="btn btn-danger"><a href="/list">返回</a></button>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

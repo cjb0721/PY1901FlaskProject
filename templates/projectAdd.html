@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>创建项目</title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css"/>
+		
+		<script src="../static/js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		
+		<div class="container">		
+			
+			<div class="panel panel-default panel-info">
+				<!-- Default panel contents -->
+				<div class="panel-heading">新建项目</div>
+				<form action="/projectAdd" method="post">
+					<div class="panel-body">
+						<p>项目名称<input type="text" name="proname" value="" /></p>
+					</div>
+				
+					<!-- List group -->
+					<ul class="list-group">
+						<li class="list-group-item">
+							<span>项目内容</span>
+							<p><textarea class="form-control" rows="3" name="probody"></textarea></p>
+						</li>
+						<li class="list-group-item">
+							<input type="submit" id="" value="添加" class="btn btn-info" style="margin-left: 45%;"/>
+							<button type="button" class="btn btn-danger"><a href="/list">返回</a></button>
+						</li>
+						
+					</ul>
+				</form>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
