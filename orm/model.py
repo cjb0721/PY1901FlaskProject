@@ -1,3 +1,8 @@
+
+class Test:
+    def __init__(self, id):
+        self.id = id
+
 """
     ORM 生成数据库中的表
 """
